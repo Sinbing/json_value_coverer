@@ -20,15 +20,15 @@
 
 可以看到，新版本的英文语言文件已经与已汉化的文件无法对其，作者他删减过以前的键名
 
-![en2zh](\png\en2zh.png)
+![en2zh](png\en2zh.png)
 
 输出文件键值完全继承自汉化文件
 
-![out2zn](\png\out2zn.png)
+![out2zn](png\out2zn.png)
 
 并且输出文件与新版英文的行数可以完全对齐，键名与新版语言文件完全一致
 
-![en2zh](\png\en2out.png)
+![en2zh](png\en2out.png)
 
 ## 用法:
 
@@ -44,13 +44,13 @@
 
 输入时会校验文件，只允许json文件输入
 
-![input](\png\input.png)
+![input](png\input.png)
 
 
 
 指定输出文件名时无需输入后缀，输出位置为程序同目录下
 
-![output](\png\output.png)
+![output](png\output.png)
 
 
 
