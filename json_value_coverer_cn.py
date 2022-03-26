@@ -1,8 +1,9 @@
-#-*- coding: utf-8-*-
+# -*- coding: utf-8-*-
 import os
 import time
 import json
 from collections import OrderedDict
+
 
 def show_usage():
     print('''
@@ -33,12 +34,12 @@ def read_json(json_file_name: str):
         return output_dict
 
 
-def update_json(source_json: dict, target_json: dict):
+def update_json(source_json: dict, target_json: dict) -> tuple[dict, int]:
     cover_count: int = 0
     # cover value from source.json -> target.json.
     for source_key in source_json:
         if source_key in target_json:
-            target_json.update({f'{source_key}':source_json[source_key]})
+            target_json.update({f'{source_key}': source_json[source_key]})
             cover_count = cover_count + 1
     return target_dict, cover_count
 
@@ -51,7 +52,6 @@ def output_file(json_dict: dict):
         print(f'\n### 成功啰 ### \n#- 爷替换了足足 {cover_count} 条键值诶！ -#')
     except:
         print(f'### 出BUG啰 ### \n#- 没办法创建输出文件，你再好好检查一下吧！ -#')
-
 
 
 if __name__ == '__main__':
